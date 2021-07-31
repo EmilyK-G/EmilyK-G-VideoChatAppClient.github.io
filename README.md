@@ -17,6 +17,8 @@ User stories </br>
 
 
 Sources:
-For the video I used webrtc, socket.io and peer. Tutorial: https://www.youtube.com/watch?v=oxFr7we3LC8&t=1520s.</br>
+For the video I used webrtc, socket.io and peer. Instructive tutorials: </br> 
+https://www.youtube.com/watch?v=oxFr7we3LC8&t=1520s.</br>
+https://www.youtube.com/watch?v=800i2EF-0XU&list=LL&index=2</br>
 To connect the client-side application(react js) with database(mongodb) I used: https://www.youtube.com/watch?v=nUbNn0voiBI.
 </br> 
