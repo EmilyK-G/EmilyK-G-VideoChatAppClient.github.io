@@ -1,21 +1,34 @@
 {
+  "homepage": "http://EmilyK-G.github.io/EmilyK-G-Video_chat_app_client.github.io",
   "name": "video-chat-app",
   "version": "0.1.0",
   "private": true,
+  "proxy": "https://9b7em.sse.codesandbox.io/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
+    "axios": "^0.21.1",
+    "dateformat": "^4.5.1",
+    "mongoose": "^5.13.4",
+    "peerjs": "^1.3.2",
     "react": "^17.0.2",
+    "react-copy-to-clipboard": "^5.0.3",
     "react-dom": "^17.0.2",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
-    "web-vitals": "^1.0.1"
+    "simple-peer": "^9.11.0",
+    "socket.io-client": "^4.1.3",
+    "web-vitals": "^1.0.1",
+    "yarn": "^1.22.11"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+		"deploy": "gh-pages -d public"
   },
   "eslintConfig": {
     "extends": [

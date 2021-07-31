@@ -1,25 +1,32 @@
-import logo from './logo.svg';
+import React from 'react';
+import {BrowserRouter as Router, Route} from "react-router-dom";
+import { ContextProvider } from './SocketContext.jsx';
 import './App.css';
 
-function App() {
+import Navbar from './components/Navbar/Navbar.jsx';
+import Home from './components/Home/Home';
+import Meetings from './components/Meetings/Meetings';
+import Footer from './components/Footer/Footer';
+
+
+const App = () => {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container appContainer">
+      <Router>
+        <Navbar />
+        <Route path="/" exact>
+          <ContextProvider>
+            <Home />
+          </ContextProvider>
+        </Route>
+        <Route path="/your_meetings">
+          <Meetings />
+        </Route>
+      </Router>
+      <Footer />
     </div>
   );
-}
+};
 
 export default App;
