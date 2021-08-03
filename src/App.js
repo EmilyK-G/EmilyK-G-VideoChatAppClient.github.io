@@ -13,7 +13,7 @@ const App = () => {
 
   return (
     <div className="container appContainer">
-      <Router>
+      <Router basename="/EmilyK-G-VideoChatAppClient.github.io">
         <Navbar />
         <Route path="/" exact>
           <ContextProvider>
