@@ -1,5 +1,5 @@
 # Videochat Application
-
+Hosted at http://EmilyK-G.github.io/EmilyK-G-VideoChatAppClient.github.io </br>
 Setup:
 - run ```npm i && npm start``` for client to start the development server
 - Please have the following files running while viewing this project:
@@ -10,6 +10,7 @@ https://codesandbox.io/s/webrtcindexjs-vt3e7?file=/src/index.js
 Mongoose database for this project:
 https://codesandbox.io/s/videochatappserverjs-9b7em?file=/src/meetingRoute.js
 </br>
+
 </br>
 User stories </br>
 • As a website owner, I want a private way to communicate with my clients so I don't need to use external plataforms. </br>
