@@ -15,7 +15,7 @@ function Meetings(){
     const [deleted, setDeleted] = useState(false);
 
     useEffect(() => {
-    fetch("/meetings").then((res) => {
+    fetch("https://9b7em.sse.codesandbox.io/meetings").then((res) => {
             if (res.ok) {
                 return res.json();
             }
@@ -27,7 +27,7 @@ function Meetings(){
     }, [deleted]);
     
     function deleteItem(id) {
-        axios.delete('/delete/' + id);
+        axios.delete('https://9b7em.sse.codesandbox.io/delete/' + id);
     }
 
     if (meetings.length >= 1) {
